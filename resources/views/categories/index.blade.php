@@ -2,18 +2,18 @@
 
 @section('content')
     <div class="container">
-        <h1>Categories</h1>
+        <h1>Categorias</h1>
 
-        <a href="{{ route('categories.create') }}" class="btn btn-primary mb-3">Create Category</a>
-        <a href="{{ route('categories.exportPdf') }}" class="btn btn-success mb-3">Export to PDF</a>
+        <a href="{{ route('categories.create') }}" class="btn btn-primary mb-3">Crear Categoria</a>
+        <a href="{{ route('categories.exportPdf') }}" class="btn btn-success mb-3">Exportar a PDF</a>
 
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Actions</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,12 +23,12 @@
                         <td>{{ $category->name }}</td>
                         <td>{{ $category->description }}</td>
                         <td>
-                            <a href="{{ route('categories.show', $category->id) }}" class="btn btn-info btn-sm">View</a>
-                            <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                            <a href="{{ route('categories.show', $category->id) }}" class="btn btn-info btn-sm">Ver</a>
+                            <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-primary btn-sm">Editar</a>
                             <form action="{{ route('categories.destroy', $category->id) }}" method="POST" class="d-inline">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this category?')">Delete</button>
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this category?')">Eliminar</button>
                             </form>
                         </td>
                     </tr>

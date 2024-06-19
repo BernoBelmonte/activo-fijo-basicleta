@@ -4,16 +4,16 @@
     <div class="container">
         <h1>Sales</h1>
 
-        <a href="{{ route('sales.create') }}" class="btn btn-primary mb-3">Create Sale</a>
-        <a href="{{ route('sales.exportPdf') }}" class="btn btn-success mb-3">Export to PDF</a>
+        <a href="{{ route('sales.create') }}" class="btn btn-primary mb-3">Crear Venta</a>
+        <a href="{{ route('sales.exportPdf') }}" class="btn btn-success mb-3">Exportar a PDF</a>
 
         <table class="table">
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Total Price</th>
-                    <th>Sale Date</th>
-                    <th>Action</th>
+                    <th>Precio Total</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,12 +23,12 @@
                         <td>{{ $sale->total_price }}</td>
                         <td>{{ $sale->sale_date }}</td>
                         <td>
-                            <a href="{{ route('sales.show', $sale->id) }}" class="btn btn-info">View</a>
-                            <a href="{{ route('sales.edit', $sale->id) }}" class="btn btn-primary">Edit</a>
+                            <a href="{{ route('sales.show', $sale->id) }}" class="btn btn-info">Ver</a>
+                            <a href="{{ route('sales.edit', $sale->id) }}" class="btn btn-primary">Editar</a>
                             <form action="{{ route('sales.destroy', $sale->id) }}" method="POST" class="d-inline">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this sale?')">Delete</button>
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this sale?')">Eliminar</button>
                             </form>
                         </td>
                     </tr>

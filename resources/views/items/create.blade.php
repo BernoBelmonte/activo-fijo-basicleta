@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Create Item</h1>
+    <h1>Crear Item</h1>
     <form action="{{ route('items.store') }}" method="POST">
         @csrf
         <div>
-            <label for="name">Name</label>
+            <label for="name">Nombre</label>
             <input type="text" name="name" id="name" required>
         </div>
         <div>
-            <label for="category_id">Category</label>
+            <label for="category_id">Categoria</label>
             <select name="category_id" id="category_id" required>
                 @foreach ($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -17,13 +17,13 @@
             </select>
         </div>
         <div>
-            <label for="quantity">Quantity</label>
+            <label for="quantity">Cantidad</label>
             <input type="number" name="quantity" id="quantity" required>
         </div>
         <div>
-            <label for="price">Price</label>
+            <label for="price">Precio</label>
             <input type="number" name="price" id="price" required>
         </div>
-        <button type="submit">Save</button>
+        <button type="submit">Guardar</button>
     </form>
 @endsection

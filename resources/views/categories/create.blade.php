@@ -2,22 +2,22 @@
 
 @section('content')
     <div class="container">
-        <h1>Create Category</h1>
+        <h1>Crear Categoria</h1>
 
         <form action="{{ route('categories.store') }}" method="POST">
             @csrf
 
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Nombre</label>
                 <input type="text" class="form-control" id="name" name="name">
             </div>
 
             <div class="form-group">
-                <label for="description">Description</label>
+                <label for="description">Descripcion</label>
                 <textarea class="form-control" id="description" name="description" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Create Category</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
     </div>
 @endsection

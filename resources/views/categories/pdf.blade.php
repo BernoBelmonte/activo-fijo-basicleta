@@ -22,13 +22,13 @@
     </style>
 </head>
 <body>
-    <h1>Categories</h1>
+    <h1>Categorias</h1>
     <table>
         <thead>
             <tr>
                 <th>#</th>
-                <th>Name</th>
-                <th>Description</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
             </tr>
         </thead>
         <tbody>

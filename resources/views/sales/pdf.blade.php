@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sales PDF</title>
+    <title>Ventas PDF</title>
     <style>
-        /* Estilos CSS para el PDF */
         body {
             font-family: Arial, sans-serif;
         }
@@ -23,13 +22,13 @@
     </style>
 </head>
 <body>
-    <h1>Sales</h1>
+    <h1>Ventas</h1>
     <table>
         <thead>
             <tr>
                 <th>#</th>
-                <th>Total Price</th>
-                <th>Sale Date</th>
+                <th>Precio total</th>
+                <th>Fecha Venta</th>
             </tr>
         </thead>
         <tbody>

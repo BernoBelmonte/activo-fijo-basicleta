@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Items PDF</title>
     <style>
-        /* Estilos CSS para el PDF */
+        
         body {
             font-family: Arial, sans-serif;
         }
@@ -28,9 +28,9 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Name</th>
-                <th>Category</th>
-                <th>Quantity</th>
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Cantidad</th>
             </tr>
         </thead>
         <tbody>
